@@ -1,0 +1,560 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style: none;
+}
+
+
+header .hLine {
+    background: #595656;
+    height: 20px;
+}
+
+header nav {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+header nav .logo {
+    margin-top: 15px;
+}
+
+header nav ul {
+    display: flex;
+    height: 86px;
+}
+
+header nav ul li {
+    width: 100px;
+    margin: 0 20px;
+    position: relative;
+    color: black;
+}
+header nav ul li:nth-child(1) {
+    color: white;
+    background: #595656;
+}
+header nav ul li:hover {
+    background: #595656;
+    cursor: pointer;
+}
+header nav ul li:nth-child(5) {
+    width: 148px;
+}
+header nav ul li:nth-child(1) .text {
+    color: white;
+}
+header nav ul li:hover .text {
+    color: white;
+}
+header nav ul li .text {
+    color: inherit;
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+header nav ul li:nth-child(1) .fLine {
+    display: block;
+}
+header nav ul li:hover .fLine {
+    display: block;
+}
+header nav ul li .fLine {
+    background: #99C138;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+
+
+.banner {
+    margin-top: 5px;
+}
+#carousel-example-generic {
+    margin: 0 auto;
+    width: 1400px;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #0b1505;
+    border-radius: 10px;
+    border: none;
+    margin: 0 8px !important;
+}
+.carousel-indicators .active {
+    width: 17px;
+    height: 17px;
+    margin: 0;
+    background-color: #7fb11e;
+}
+.banner2 {
+    position: relative;
+    width: 1280px;
+    height: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url("../images/banner2.jpg")no-repeat;
+}
+.topLine,.botLine{
+    background: #575654;
+    height: 10px;
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.topLine{
+    margin-top: 10px;
+}
+.banner2 .grow{
+    transition: all .8s;
+}
+.banner2 .grow:hover {
+    transform: scale(1.1);
+}
+.banner2 .grow,.banner2 .grow .text{
+    position: absolute;
+}
+.banner2 .grow .text {
+    margin-left: 154px;
+    margin-top: 100px;
+}
+.banner2 .grow .img {
+    margin-left: 120px;
+    margin-top: 70px;
+}
+.banner2 .ai:hover,
+.banner2 .grow:hover,
+.banner2 .baby:hover,
+.banner2 .food:hover,
+.banner2 .health:hover{
+    cursor: pointer;
+}
+.banner2 .ai,
+.banner2 .health,
+.banner2 .baby,
+.banner2 .food {
+    color: white;
+    transition: all 1s;
+    position: absolute;
+}
+.banner2 .baby,
+.banner2 .food {
+    margin-left: 800px;
+}
+.banner2 .baby {
+    margin-top: 215px;
+}
+.banner2 .food {
+    margin-top: 350px;
+}
+.banner2 .ai{
+    margin-left: 320px;
+}
+.banner2 .health {
+    margin-left: 330px;
+}
+.banner2 .ai {
+    margin-top: 215px;
+}
+.banner2 .health {
+    margin-top: 350px;
+}
+.banner2 .ai:hover,
+.banner2 .health:hover,
+.banner2 .baby:hover,
+.banner2 .food:hover {
+    transform: scale(1.1);
+}
+
+/*示范园区*/
+.school {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #eeeeee;
+}
+.school .title {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.school .title .text {
+    font-size: 40px;
+    color: #595657;
+    text-align: center;
+    padding-top: 60px;
+}
+.school .title .img {
+    display: flex;
+    position: relative;
+}
+.school .title .img .left,
+.school .title .img .right,
+.school .title .img .green,
+.school .title .img .white{
+    height: 12px;
+    margin-top: 48px;
+}
+.school .title .img .left {
+    width: 600px;
+    background: #5A5758;
+}
+.school .title .img .right {
+    width: 150px;
+    background: #98C139;
+}
+.school .bSchool {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: 38px;
+    margin-top: 70px;
+}
+.school .bSchool .item {
+    transition: all 1s;
+    margin-left: 40px;
+}
+.school .bSchool .item:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.school .bSchool .item .text {
+    font-size: 20px;
+    color: #595657;
+    text-align: center;
+    margin: 20px 0;
+}
+.school .happy {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: #595657;
+    font-size: 25px;
+    padding-left: 60px;
+}
+
+/* 园区调查表 */
+.school .table .tHead,
+.school .table .tbody{
+    display: flex;
+    width: 1150px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.school .table .tHead div {
+    background: #666666;
+    font-weight: 700;
+}
+.school .table .tHead div,
+.school .table .tbody div {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px 0;
+    text-align: center;
+}
+.school .table .tHead div:nth-child(1),
+.school .table .tbody div:nth-child(1){
+    text-align: left;
+    padding-left: 40px;
+}
+.school .table .tHead div:last-child,
+.school .table .tbody div:last-child{
+    margin-right: 0;
+}
+.school .table .tbody div:nth-child(1) {
+    background: #3dac8b;
+}
+.school .table .tbody div {
+    background: #C9C9CB;
+}
+
+/* 加盟流程 */
+.school .add {
+    background: url("../images/talk.jpg") 0 0 no-repeat;
+    height: 908px;
+}
+.school .title .img .white {
+    width: 600px;
+    background: white;
+}
+.school .title .img .green {
+    width: 150px;
+    background: #5F9322;
+}
+.school .add .title .text {
+    color: white;
+}
+.school .add .img {
+    display: flex;
+    justify-content: space-around;
+    margin: 70px 0;
+}
+.school .add .img .item {
+    position: relative;
+    transition: all 1s;
+}
+.school .add .img .item:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.school .add .img .item div {
+    color: #1b6d85;
+    position: absolute;
+    top: 76px;
+    left: 62px;
+}
+.school .add .if {
+    text-align: center;
+    font-size: 22px;
+    color: white;
+}
+.school .add .number {
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 8px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.school .bsWidth {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.school .together {
+    display: flex;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+.school .together .left {
+    margin-top: 70px;
+    margin-left: -20px;
+    margin-right: 50px;
+}
+.school .together .right .item {
+    display: flex;
+}
+.school .together .right .item .text {
+    padding-left: 15px;
+    padding-top: 5px;
+}
+.school .together .right .item .text .title{
+    font-size: 20px;
+    padding-bottom: 5px;
+    color: black;
+}
+.school .together .right .item .text .dist {
+    font-size: 15px;
+}
+
+/* 加盟信息 */
+.school .form {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+.school .form img {
+    width: 100%;
+}
+.school .form .img {
+    margin-right: 15px;
+}
+.school .form .line1,
+.school .form .line2,
+.school .form .line3,
+.school .form .line4{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.school .form .line1 .userName,
+.school .form .line1 .phone,
+.school .form .line2 .email,
+.school .form .line3 .where,
+.school .form .line4 .message{
+    display: flex;
+}
+.school .form .line1 .phone {
+    margin-right: 27px;
+}
+.school .form .line {
+    background: #9EC048;
+    width: 15px;
+}
+.school .form .line1 input,
+.school .form .line2 input,
+.school .form .line2 input,
+.school .form .line3 input,
+.school .form .line4 input{
+    height: 100%;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+}
+.school .form .line3 {
+    height: 80px;
+}
+.school .form .line4 {
+    height: 130px;
+}
+.school .form .id {
+    width: 672px;
+    margin-left: 57px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.school .form .id,
+.school .form .left,
+.school .form .right{
+    display: flex;
+}
+.school .form .id .input{
+    height: 26px;
+}
+.school .form .id input {
+    outline: none;
+    border: none;
+    padding-left: 15px;
+    height: 100%;
+}
+.school .form .id img {
+    width: 100%;
+    flex: 1;
+}
+.school .form .id a{
+    margin-top: 8px;
+    margin-left: 10px;
+    color: #747474;
+    text-decoration: underline;
+}
+.school .form .sub {
+    position: relative;
+    height: 100px;
+
+}
+.school .form .sub button{
+    position: absolute;
+    right: 26px;
+    background: #469980;
+    border: none;
+    transition: all .6s;
+    color: white;
+    width: 150px;
+    padding: 10px 0;
+}
+.school .form .sub button:hover {
+    background: #F19F2B;
+}
+
+
+/*获取加盟信息*/
+.school .get {
+    background: #92c222;
+}
+.school .get .title {
+    padding-bottom: 80px;
+}
+.school .get .title .text{
+    color: white;
+}
+.school .get .banner {
+    background: url("../images/banner3.jpg")0 0 no-repeat;
+    height: 870px;
+    position: relative;
+}
+.school .get .banner .lay {
+    width: 100%;
+    background: rgba(0,0,0,.4);
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+}
+.school .get .banner .lay .text {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 140px;
+    color: #fff;
+    font-size: 18px;
+}
+.school .images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+
+
+/*  footer  */
+footer .gLine {
+    margin-top: 70px;
+    background: #92c222;
+    height: 6px;
+}
+footer .grey {
+    background: #5a5959;
+    padding: 20px 0;
+}
+footer ul {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    display: flex;
+    color: white;
+}
+footer ul li {
+    flex: 1;
+}
+footer ul li p:nth-child(1) {
+    font-size: 20px;
+}
+footer ul li p img:hover {
+    cursor: pointer;
+}
+.copyRight {
+    text-align: center;
+    color: #333;
+}
